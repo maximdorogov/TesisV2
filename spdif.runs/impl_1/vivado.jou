@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov  2 11:01:25 2019
+# Process ID: 12880
+# Current directory: C:/Users/ASUS/Desktop/FPGA/spdif/spdif.runs/impl_1
+# Command line: vivado.exe -log spdif_topV2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source spdif_topV2.tcl -notrace
+# Log file: C:/Users/ASUS/Desktop/FPGA/spdif/spdif.runs/impl_1/spdif_topV2.vdi
+# Journal file: C:/Users/ASUS/Desktop/FPGA/spdif/spdif.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source spdif_topV2.tcl -notrace
