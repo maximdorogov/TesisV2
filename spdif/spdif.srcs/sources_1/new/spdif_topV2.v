@@ -16,7 +16,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// En este top level se prueban 2 salidas spdif
+// En este top level se prueba 1 salida de spdif
 //////////////////////////////////////////////////////////////////////////////////
 
 

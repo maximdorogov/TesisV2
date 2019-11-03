@@ -33,10 +33,13 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
 set_property ip_output_repo c:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v
+read_verilog -library xil_defaultlib {
+  C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/sample_rate_gen.v
+  C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v
+}
 read_vhdl -library xil_defaultlib {
+  C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/SPDIF_TX.vhd
   C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd
-  C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/serialiser.vhd
   C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/soundSource.vhd
 }
 read_ip -quiet C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0.xci
@@ -59,12 +62,12 @@ set_property used_in_implementation false [get_files C:/Users/ASUS/Desktop/FPGA/
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top spdif_topV2 -part xc7a35ticsg324-1L
+synth_design -top spdif_top -part xc7a35ticsg324-1L
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef spdif_topV2.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file spdif_topV2_utilization_synth.rpt -pb spdif_topV2_utilization_synth.pb"
+write_checkpoint -force -noxdef spdif_top.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file spdif_top_utilization_synth.rpt -pb spdif_top_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

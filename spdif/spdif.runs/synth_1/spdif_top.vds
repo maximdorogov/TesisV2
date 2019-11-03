@@ -2,46 +2,46 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Nov  2 22:40:32 2019
-# Process ID: 11836
+# Start of session at: Sat Nov  2 23:31:17 2019
+# Process ID: 2136
 # Current directory: C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1
-# Command line: vivado.exe -log spdif_topV2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spdif_topV2.tcl
-# Log file: C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_topV2.vds
+# Command line: vivado.exe -log spdif_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spdif_top.tcl
+# Log file: C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_top.vds
 # Journal file: C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source spdif_topV2.tcl -notrace
-Command: synth_design -top spdif_topV2 -part xc7a35ticsg324-1L
+source spdif_top.tcl -notrace
+Command: synth_design -top spdif_top -part xc7a35ticsg324-1L
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1596 
+INFO: Helper process launched with PID 10800 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 428.574 ; gain = 97.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 428.422 ; gain = 96.188
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'spdif_topV2' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v:23]
-INFO: [Synth 8-638] synthesizing module 'serialiser' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/serialiser.vhd:23]
-INFO: [Synth 8-3491] module 'Timebase' declared at 'C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd:12' bound to instance 'Inst_Timebase' of component 'Timebase' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/serialiser.vhd:47]
+INFO: [Synth 8-6157] synthesizing module 'spdif_top' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v:21]
 INFO: [Synth 8-638] synthesizing module 'Timebase' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd:18]
 WARNING: [Synth 8-614] signal 'n' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'Timebase' (1#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'serialiser' (2#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/serialiser.vhd:23]
+INFO: [Synth 8-6157] synthesizing module 'sample_rate_gen' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/sample_rate_gen.v:33]
+	Parameter F_CLK_OUT bound to: 44100 - type: integer 
+	Parameter F_CLK_IN bound to: 100000000 - type: integer 
+	Parameter MAX_COUNTER bound to: 2267 - type: integer 
+	Parameter NBITS bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sample_rate_gen' (2#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/sample_rate_gen.v:33]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/.Xil/Vivado-2136-DESKTOP-4H7CRNK/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (3#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/.Xil/Vivado-2136-DESKTOP-4H7CRNK/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'F8_SPDIF_TX' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/SPDIF_TX.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'F8_SPDIF_TX' (4#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/SPDIF_TX.vhd:45]
 INFO: [Synth 8-638] synthesizing module 'soundSource' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/soundSource.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'soundSource' (3#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/soundSource.vhd:21]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v:56]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/.Xil/Vivado-11836-DESKTOP-4H7CRNK/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/.Xil/Vivado-11836-DESKTOP-4H7CRNK/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_soundSource'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v:48]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v:56]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_serializer'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'spdif_topV2' (5#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v:23]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[3]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[2]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[1]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[0]
-WARNING: [Synth 8-3331] design spdif_topV2 has unconnected port i_reset
+INFO: [Synth 8-256] done synthesizing module 'soundSource' (5#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/soundSource.vhd:21]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_soundSource'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v:64]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_F8_SPDIF_TX'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v:56]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'spdif_top' (6#1) [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v:21]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 484.371 ; gain = 152.984
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 483.703 ; gain = 151.469
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -54,18 +54,18 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 484.371 ; gain = 152.984
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 483.703 ; gain = 151.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 484.371 ; gain = 152.984
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 483.703 ; gain = 151.469
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
-Finished Parsing XDC File [c:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
+Parsing XDC File [c:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
 Parsing XDC File [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc:14]
 WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc:15]
@@ -80,40 +80,40 @@ WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/ASUS/Desktop/FPGA/
 WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc:42]
 WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc:43]
 Finished Parsing XDC File [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/spdif_topV2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/spdif_topV2_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/spdif_topV2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.008 ; gain = 0.000
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/spdif_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/spdif_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/spdif_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 810.602 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 810.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 796.008 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 796.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 810.602 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 810.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 796.008 ; gain = 464.621
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 810.602 ; gain = 478.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 796.008 ; gain = 464.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 810.602 ; gain = 478.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for u_ila. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 796.008 ; gain = 464.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 810.602 ; gain = 478.367
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "n[errorTotal]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "n[bitClock]" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6040] Register sampleCounter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 796.008 ; gain = 464.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 810.602 ; gain = 478.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,26 +127,30 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 3     
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 1     
 +---XORs : 
-	  24 Input      1 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 1     
+	  25 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               64 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
 	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 3     
-	                6 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   3 Input     24 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 1     
-	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -169,21 +173,32 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 3     
-Module serialiser 
+Module sample_rate_gen 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-+---XORs : 
-	  24 Input      1 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               64 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
-	   3 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module F8_SPDIF_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	  25 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   3 Input     24 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
 Module soundSource 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -206,15 +221,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "Inst_Timebase/n[bitClock]" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6040] Register sampleCounter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[3]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[2]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[1]
-WARNING: [Synth 8-3331] design serialiser has unconnected port sample[0]
-WARNING: [Synth 8-3331] design spdif_topV2 has unconnected port i_reset
+INFO: [Synth 8-5546] ROM "u_Timebase/n[bitClock]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_F8_SPDIF_TX/\channel_status_shift_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 796.008 ; gain = 464.621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 810.602 ; gain = 478.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -241,13 +252,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 797.473 ; gain = 466.086
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 810.602 ; gain = 478.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 818.801 ; gain = 487.414
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 827.457 ; gain = 495.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -259,7 +270,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -283,20 +294,22 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin spdif_out_OBUF with 1st driver pin 'u_F8_SPDIF_TX/data_biphase_reg/Q' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/SPDIF_TX.vhd:130]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin spdif_out_OBUF with 2nd driver pin 'u_Timebase/r_reg[loadSerialiser]/Q' [C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd:68]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,25 +321,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -345,54 +358,55 @@ Report Cell Usage:
 +------+-------+------+
 |1     |ila_0  |     1|
 |2     |BUFG   |     1|
-|3     |CARRY4 |     3|
-|4     |LUT1   |     4|
-|5     |LUT2   |    10|
-|6     |LUT3   |    32|
-|7     |LUT4   |    18|
-|8     |LUT5   |    14|
-|9     |LUT6   |    70|
+|3     |CARRY4 |     6|
+|4     |LUT1   |     5|
+|5     |LUT2   |    12|
+|6     |LUT3   |    14|
+|7     |LUT4   |    16|
+|8     |LUT5   |    21|
+|9     |LUT6   |    95|
 |10    |MUXF7  |    28|
 |11    |MUXF8  |    14|
-|12    |FDRE   |    82|
-|13    |FDSE   |    30|
-|14    |IBUF   |     1|
+|12    |FDRE   |   118|
+|13    |FDSE   |     2|
+|14    |IBUF   |     2|
 |15    |OBUF   |     2|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+------------------+------------+------+
-|      |Instance          |Module      |Cells |
-+------+------------------+------------+------+
-|1     |top               |            |   309|
-|2     |  u_serializer    |serialiser  |   175|
-|3     |    Inst_Timebase |Timebase    |    87|
-|4     |  u_soundSource   |soundSource |   130|
-+------+------------------+------------+------+
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   336|
+|2     |  u_F8_SPDIF_TX     |F8_SPDIF_TX     |   119|
+|3     |  u_soundSource     |soundSource     |   130|
+|4     |  u_Timebase        |Timebase        |    61|
+|5     |  u_sample_rate_gen |sample_rate_gen |    21|
++------+--------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 820.973 ; gain = 177.949
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 820.973 ; gain = 489.586
+Synthesis finished with 0 errors, 2 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 829.113 ; gain = 169.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 829.113 ; gain = 496.879
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 820.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 829.113 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 17 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 820.973 ; gain = 491.309
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 829.113 ; gain = 498.605
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 829.113 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_topV2.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file spdif_topV2_utilization_synth.rpt -pb spdif_topV2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 22:41:20 2019...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file spdif_top_utilization_synth.rpt -pb spdif_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 23:32:08 2019...

@@ -76,10 +76,10 @@ set rc [catch {
   set_property ip_output_repo C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_topV2.dcp
+  add_files -quiet C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_top.dcp
   read_ip -quiet C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0.xci
   read_xdc C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc
-  link_design -top spdif_topV2 -part xc7a35ticsg324-1L
+  link_design -top spdif_top -part xc7a35ticsg324-1L
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -95,8 +95,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force spdif_topV2_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file spdif_topV2_drc_opted.rpt -pb spdif_topV2_drc_opted.pb -rpx spdif_topV2_drc_opted.rpx"
+  write_checkpoint -force spdif_top_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file spdif_top_drc_opted.rpt -pb spdif_top_drc_opted.pb -rpx spdif_top_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -115,10 +115,10 @@ set rc [catch {
     implement_debug_core 
   } 
   place_design 
-  write_checkpoint -force spdif_topV2_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file spdif_topV2_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file spdif_topV2_utilization_placed.rpt -pb spdif_topV2_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file spdif_topV2_control_sets_placed.rpt"
+  write_checkpoint -force spdif_top_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file spdif_top_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file spdif_top_utilization_placed.rpt -pb spdif_top_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file spdif_top_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -134,19 +134,19 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force spdif_topV2_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file spdif_topV2_drc_routed.rpt -pb spdif_topV2_drc_routed.pb -rpx spdif_topV2_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file spdif_topV2_methodology_drc_routed.rpt -pb spdif_topV2_methodology_drc_routed.pb -rpx spdif_topV2_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file spdif_topV2_power_routed.rpt -pb spdif_topV2_power_summary_routed.pb -rpx spdif_topV2_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file spdif_topV2_route_status.rpt -pb spdif_topV2_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file spdif_topV2_timing_summary_routed.rpt -pb spdif_topV2_timing_summary_routed.pb -rpx spdif_topV2_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file spdif_topV2_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file spdif_topV2_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file spdif_topV2_bus_skew_routed.rpt -pb spdif_topV2_bus_skew_routed.pb -rpx spdif_topV2_bus_skew_routed.rpx"
+  write_checkpoint -force spdif_top_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file spdif_top_drc_routed.rpt -pb spdif_top_drc_routed.pb -rpx spdif_top_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file spdif_top_methodology_drc_routed.rpt -pb spdif_top_methodology_drc_routed.pb -rpx spdif_top_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file spdif_top_power_routed.rpt -pb spdif_top_power_summary_routed.pb -rpx spdif_top_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file spdif_top_route_status.rpt -pb spdif_top_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file spdif_top_timing_summary_routed.rpt -pb spdif_top_timing_summary_routed.pb -rpx spdif_top_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file spdif_top_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file spdif_top_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file spdif_top_bus_skew_routed.rpt -pb spdif_top_bus_skew_routed.pb -rpx spdif_top_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force spdif_topV2_routed_error.dcp
+  write_checkpoint -force spdif_top_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -159,10 +159,10 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  catch { write_mem_info -force spdif_topV2.mmi }
-  write_bitstream -force spdif_topV2.bit 
-  catch {write_debug_probes -quiet -force spdif_topV2}
-  catch {file copy -force spdif_topV2.ltx debug_nets.ltx}
+  catch { write_mem_info -force spdif_top.mmi }
+  write_bitstream -force spdif_top.bit 
+  catch {write_debug_probes -quiet -force spdif_top}
+  catch {file copy -force spdif_top.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

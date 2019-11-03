@@ -25,7 +25,7 @@ module spdif_top(
     output load
     );
   
-  wire spdif_clock;
+  wire spdif_clock,addr_out;
   //wire load;
   wire [19:0] audio_sample;
   wire rst = ~i_reset;  
@@ -34,7 +34,7 @@ module spdif_top(
         u_Timebase    
             ( .clk(clk),
               .bitclock(spdif_clock),
-              .loadSerialiser()
+              .loadSerialiser(spdif_out)
             );
   
   sample_rate_gen #(.F_CLK_OUT(44_100))
@@ -45,11 +45,18 @@ module spdif_top(
             .o_clk(load)        
   );
   
+  ila_0 your_instance_name (
+	.clk(clk), // input wire clk
+	.probe0(audio_sample), // input wire [19:0]  probe0  
+	.probe1(addr_out), // input wire [0:0]  probe1 
+	.probe2(spdif_out) // input wire [0:0]  probe2
+);
+  
   F8_SPDIF_TX 
       u_F8_SPDIF_TX
       (   .bit_clock(spdif_clock),  //128x Fsample (6.144MHz for 48K samplerate)
           .data_in(audio_sample),    //24 bits data in
-          .address_out(), //1 address bit means stereo only
+          .address_out(addr_out), //1 address bit means stereo only
           .spdif_out(spdif_out)   //
        );
        
