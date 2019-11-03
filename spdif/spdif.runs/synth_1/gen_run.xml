@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1572712988">
+<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1572745228">
   <File Type="PA-TCL" Name="spdif_topV2.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="spdif_topV2_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="spdif_topV2_reports.tcl"/>
@@ -50,13 +50,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/SPDIF_TX.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/spdif_top.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -65,13 +58,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/tb_soundSource.v">
+    <File Path="$PSRCDIR/sources_1/new/SPDIF_TX.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/tb_soundSource.v"/>
-        <Attr Name="ImportTime" Val="1571768196"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -104,4 +94,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
 </GenRun>

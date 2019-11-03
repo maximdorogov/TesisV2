@@ -16,7 +16,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// En este top level se prueban 2 salidas spdif
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -24,6 +24,7 @@ module spdif_topV2(
     input  clk,
     input  i_reset,
     output spdif_out,
+    //output [19:0] audio_sample,
     output load
     );
     
@@ -50,7 +51,13 @@ module spdif_topV2(
 			 .nextSample(load),
 			 .channelA(channelA),
 			 .Sample(audio_sample)
-			);   
-
+			);  
+			 
+    ila_0 u_ila (
+        .clk(clk), // input wire clk
+        .probe0(audio_sample), // input wire [19:0]  probe0  
+        .probe1(load), // input wire [0:0]  probe1 
+        .probe2(spdif_out) // input wire [0:0]  probe2
+);
 endmodule
   

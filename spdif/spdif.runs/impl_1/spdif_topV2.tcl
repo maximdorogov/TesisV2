@@ -65,6 +65,8 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35ticsg324-1L
   set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -73,7 +75,9 @@ set rc [catch {
   set_property parent.project_path C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.xpr [current_project]
   set_property ip_output_repo C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.runs/synth_1/spdif_topV2.dcp
+  read_ip -quiet C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/ila_0.xci
   read_xdc C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc
   link_design -top spdif_topV2 -part xc7a35ticsg324-1L
   close_msg_db -file init_design.pb
@@ -154,6 +158,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force spdif_topV2.mmi }
   write_bitstream -force spdif_topV2.bit 
   catch {write_debug_probes -quiet -force spdif_topV2}
