@@ -23,14 +23,17 @@
 module spdif_topV2(
     input  clk,
     input  i_reset,
-    output spdif_out,
-    //output [19:0] audio_sample,
-    output load
+/* Seniales de control, comentarlas en la implementacion definitiva    
+    //output [19:0] audio_sample, //comentar esta linea cuando se implementa en fpga
+    //output load,                //comentar esta linea cuando se implementa en fpga
+    //output channelA,             //comentar esta linea cuando se implementa en fpga
+*/
+    output spdif_out
     );
     
-    wire spdif_clock,audio_clk,channelA;
-  //wire load;
-    wire [19:0] audio_sample;
+  //wire spdif_clock,audio_clk;
+    wire load,channelA;        //descomentar esta linea cuando se implementa en fpga 
+    wire [19:0] audio_sample;  //descomentar esta linea cuando se implementa en fpga
     wire rst = ~i_reset;
    
    	serialiser

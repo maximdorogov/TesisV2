@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1572748273">
-  <File Type="BITSTR-BMM" Name="spdif_top_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="spdif_top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="spdif_top_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="spdif_top_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="spdif_top.tcl"/>
-  <File Type="OPT-TIMING" Name="spdif_top_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="spdif_top_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="spdif_top_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="spdif_top_reports.tcl"/>
-  <File Type="OPT-DRC" Name="spdif_top_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="spdif_top.hwdef"/>
-  <File Type="PWROPT-DCP" Name="spdif_top_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="spdif_top_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="spdif_top_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="spdif_top_placed.dcp"/>
-  <File Type="PLACE-IO" Name="spdif_top_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="spdif_top_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="spdif_top_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="spdif_top_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="spdif_top_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="spdif_top_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="spdif_top_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="spdif_top.bgn"/>
-  <File Type="PLACE-TIMING" Name="spdif_top_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="spdif_top_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="spdif_top.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="spdif_top_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="spdif_top_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="spdif_top_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="spdif_top.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="spdif_top_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="spdif_top_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="spdif_top_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="spdif_top_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="spdif_top_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="spdif_top_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1572835338">
+  <File Type="BITSTR-BMM" Name="spdif_topV2_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="spdif_topV2_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="spdif_topV2_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="spdif_topV2_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="spdif_topV2.tcl"/>
+  <File Type="OPT-TIMING" Name="spdif_topV2_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="spdif_topV2_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="spdif_topV2_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="spdif_topV2_reports.tcl"/>
+  <File Type="OPT-DRC" Name="spdif_topV2_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="spdif_topV2.hwdef"/>
+  <File Type="PWROPT-DCP" Name="spdif_topV2_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="spdif_topV2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="spdif_topV2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="spdif_topV2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="spdif_topV2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="spdif_topV2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="spdif_topV2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="spdif_topV2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="spdif_topV2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="spdif_topV2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="spdif_topV2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="spdif_topV2.bgn"/>
+  <File Type="PLACE-TIMING" Name="spdif_topV2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="spdif_topV2_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="spdif_topV2.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="spdif_topV2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="spdif_topV2_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="spdif_topV2_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="spdif_topV2.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="spdif_topV2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="spdif_topV2_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="spdif_topV2_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="spdif_topV2_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="spdif_topV2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="spdif_topV2_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="spdif_top.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="spdif_top_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="spdif_top.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="spdif_top_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="spdif_top_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="spdif_top.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="spdif_top_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="spdif_top_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="spdif_top_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="spdif_top_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="spdif_top_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="spdif_top_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="spdif_top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="spdif_top_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="spdif_top_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="spdif_top_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="spdif_top_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="spdif_top_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="spdif_top_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="spdif_top_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="spdif_top_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="spdif_top_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="spdif_top_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="spdif_top_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="spdif_top_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="spdif_top.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="spdif_top_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="spdif_top.rbt"/>
-  <File Type="BITSTR-NKY" Name="spdif_top.nky"/>
-  <File Type="BG-DRC" Name="spdif_top.drc"/>
-  <File Type="RDI-RDI" Name="spdif_top.vdi"/>
+  <File Type="BITSTR-LTX" Name="spdif_topV2.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="spdif_topV2_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="spdif_topV2.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="spdif_topV2_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="spdif_topV2_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="spdif_topV2.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="spdif_topV2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="spdif_topV2_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="spdif_topV2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="spdif_topV2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="spdif_topV2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="spdif_topV2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="spdif_topV2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="spdif_topV2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="spdif_topV2_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="spdif_topV2_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="spdif_topV2_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="spdif_topV2_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="spdif_topV2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="spdif_topV2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="spdif_topV2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="spdif_topV2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="spdif_topV2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="spdif_topV2_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="spdif_topV2_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="spdif_topV2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="spdif_topV2_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="spdif_topV2.rbt"/>
+  <File Type="BITSTR-NKY" Name="spdif_topV2.nky"/>
+  <File Type="BG-DRC" Name="spdif_topV2.drc"/>
+  <File Type="RDI-RDI" Name="spdif_topV2.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -92,6 +92,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/serialiser.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/serialiser.vhd"/>
+        <Attr Name="ImportTime" Val="1310437674"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/soundSource.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/soundSource.vhd"/>
@@ -100,25 +108,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/spdif_top.v">
+    <File Path="$PSRCDIR/sources_1/new/spdif_topV2.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/serialiser.vhd">
+    <File Path="$PSRCDIR/sources_1/new/spdif_OSVA_top.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/serialiser.vhd"/>
-        <Attr Name="ImportTime" Val="1310437674"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/spdif_topV2.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -126,7 +124,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="spdif_top"/>
+      <Option Name="TopModule" Val="spdif_topV2"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

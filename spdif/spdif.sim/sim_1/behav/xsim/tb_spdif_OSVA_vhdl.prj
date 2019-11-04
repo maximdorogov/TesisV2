@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../spdif.srcs/sources_1/new/SPDIF_TX.vhd" \
+"../../../../spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd" \
+"../../../../spdif.srcs/sources_1/imports/Spdif_out_VHDL/serialiser.vhd" \
+"../../../../spdif.srcs/sources_1/imports/Spdif_out_VHDL/soundSource.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.sim/sim_2/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sim_2/new/tb_spdifV2.v,1572793271,verilog,,,,tb_spdifV2,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/Timebase.vhd,1310089052,vhdl,,,,timebase,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/serialiser.vhd,1310437674,vhdl,,,,serialiser,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/imports/Spdif_out_VHDL/soundSource.vhd,1310437138,vhdl,,,,soundsource,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/ip/ila_0/sim/ila_0.v,1572744870,verilog,,C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/sample_rate_gen.v,,ila_0,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/SPDIF_TX.vhd,1572214150,vhdl,,,,f8_spdif_tx,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/sample_rate_gen.v,1572665857,verilog,,C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v,,sample_rate_gen,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_top.v,1572750860,verilog,,C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v,,spdif_top,,,,,,,,
+C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sources_1/new/spdif_topV2.v,1572795536,verilog,,C:/Users/ASUS/Desktop/FPGA/spdif/spdif/spdif.srcs/sim_2/new/tb_spdifV2.v,,spdif_topV2,,,,,,,,

@@ -9,12 +9,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="32768001fs"></ZoomEndTime>
-      <Cursor1Time time="8000000fs"></Cursor1Time>
+      <ZoomStartTime time="27135000fs"></ZoomStartTime>
+      <ZoomEndTime time="39255001fs"></ZoomEndTime>
+      <Cursor1Time time="35035000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <NameColumnWidth column_width="158"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
@@ -26,14 +26,6 @@
       <obj_property name="ObjectShortName">audio_sample[19:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="load_OBUF" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">load_OBUF</obj_property>
-      <obj_property name="ObjectShortName">load_OBUF</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="spdif_out_OBUF" type="logic">
@@ -42,5 +34,9 @@
       <obj_property name="ObjectShortName">spdif_out_OBUF</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="load" type="logic">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
    </wvobject>
 </wave_config>

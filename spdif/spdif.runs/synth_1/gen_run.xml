@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1572748273">
-  <File Type="PA-TCL" Name="spdif_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="spdif_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="spdif_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="spdif_top.vds"/>
-  <File Type="RDS-UTIL" Name="spdif_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="spdif_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="spdif_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="spdif_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="spdif_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1572835338">
+  <File Type="PA-TCL" Name="spdif_topV2.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="spdif_topV2_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="spdif_topV2_reports.tcl"/>
+  <File Type="RDS-RDS" Name="spdif_topV2.vds"/>
+  <File Type="RDS-UTIL" Name="spdif_topV2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="spdif_topV2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="spdif_topV2.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="spdif_topV2_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="spdif_topV2_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/sample_rate_gen.v">
@@ -32,6 +32,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/serialiser.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/serialiser.vhd"/>
+        <Attr Name="ImportTime" Val="1310437674"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/soundSource.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/soundSource.vhd"/>
@@ -40,25 +48,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/spdif_top.v">
+    <File Path="$PSRCDIR/sources_1/new/spdif_topV2.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Spdif_out_VHDL/serialiser.vhd">
+    <File Path="$PSRCDIR/sources_1/new/spdif_OSVA_top.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Spdif_out_VHDL/serialiser.vhd"/>
-        <Attr Name="ImportTime" Val="1310437674"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/spdif_topV2.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -66,7 +64,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="spdif_top"/>
+      <Option Name="TopModule" Val="spdif_topV2"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

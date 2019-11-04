@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../spdif.srcs/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../spdif.srcs/sources_1/new/sample_rate_gen.v" \
+"../../../../spdif.srcs/sources_1/new/spdif_top.v" \
+"../../../../spdif.srcs/sources_1/new/spdif_topV2.v" \
+"../../../../spdif.srcs/sim_1/new/Timebase_tb.v" \
+"../../../../spdif.srcs/sources_1/imports/Spdif_out_VHDL/tb_soundSource.v" \
+"../../../../spdif.srcs/sim_1/new/tb_spdif_OSVA.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

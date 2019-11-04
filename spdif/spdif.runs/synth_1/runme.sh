@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log spdif_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spdif_top.tcl
+EAStep vivado -log spdif_topV2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spdif_topV2.tcl
