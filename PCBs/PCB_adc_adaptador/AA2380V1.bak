@@ -1,0 +1,833 @@
+EESchema Schematic File Version 4
+LIBS:AA2380V1-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Breackout Board LT2380-24"
+Date "2019-03-28"
+Rev "1.0 "
+Comp ""
+Comment1 "Sistema de adquisicion implementado en FPGA"
+Comment2 ""
+Comment3 "Tesis de Ingenieria Electronica"
+Comment4 ""
+$EndDescr
+$Comp
+L AA2380V1-rescue:Logo_Open_Hardware_Small-Graphic #LOGO1
+U 1 1 5C30B5B9
+P 9375 6800
+F 0 "#LOGO1" H 9375 7075 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 9375 6575 50  0001 C CNN
+F 2 "" H 9375 6800 50  0001 C CNN
+F 3 "~" H 9375 6800 50  0001 C CNN
+	1    9375 6800
+	1    0    0    -1  
+$EndComp
+Text Notes 9050 7100 0    50   ~ 10
+OPEN HARDWARE
+$Comp
+L AA2380V1-rescue:+2V5-power #PWR?
+U 1 1 5CA4429B
+P 5725 2800
+AR Path="/5BA90750/5CA4429B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA4429B" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 5725 2650 50  0001 C CNN
+F 1 "+2V5" H 5750 2925 50  0000 C CNN
+F 2 "" H 5725 2800 50  0001 C CNN
+F 3 "" H 5725 2800 50  0001 C CNN
+	1    5725 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:R-Device R?
+U 1 1 5CA442B0
+P 4750 3650
+AR Path="/5BA90750/5CA442B0" Ref="R?"  Part="1" 
+AR Path="/5CA442B0" Ref="R1"  Part="1" 
+F 0 "R1" V 4650 3650 50  0000 C CNN
+F 1 "10" V 4750 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4680 3650 50  0001 C CNN
+F 3 "~" H 4750 3650 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "754-RG1608Q-100DT5 " H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.192" H -3700 700 50  0001 C CNN "Unit price"
+	1    4750 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5075 3500 5075 3650
+Connection ~ 5075 3650
+Connection ~ 5075 3950
+Wire Wire Line
+	5075 3950 5075 4100
+Wire Wire Line
+	5075 4350 5075 4300
+Wire Wire Line
+	6625 3200 6625 3150
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA442BF
+P 5075 3800
+AR Path="/5BA90750/5CA442BF" Ref="C?"  Part="1" 
+AR Path="/5CA442BF" Ref="C4"  Part="1" 
+F 0 "C4" H 4975 3775 50  0000 R CNN
+F 1 "3.3nF/100V COG" H 5050 3875 35  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5075 3800 50  0001 C CNN
+F 3 "~" H 5075 3800 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012008076" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.358" H -3700 700 50  0001 C CNN "Unit price"
+	1    5075 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5075 3650 5075 3700
+Wire Wire Line
+	5075 3900 5075 3950
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA442CA
+P 6725 2950
+AR Path="/5BA90750/5CA442CA" Ref="C?"  Part="1" 
+AR Path="/5CA442CA" Ref="C11"  Part="1" 
+F 0 "C11" V 6725 3200 50  0000 C CNN
+F 1 "47uF/6.3V" V 6625 3000 30  0000 C CNN
+F 2 "Capacitor_SMD:C_Elec_5x5.8" H 6725 2950 50  0001 C CNN
+F 3 "~" H 6725 2950 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "81-GCM32ER70J476KE9L" H -3700 700 50  0001 C CNN "Order code"
+F 6 "1.07" H -3700 700 50  0001 C CNN "Unit price"
+	1    6725 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA442D3
+P 5625 3150
+AR Path="/5BA90750/5CA442D3" Ref="C?"  Part="1" 
+AR Path="/5CA442D3" Ref="C7"  Part="1" 
+F 0 "C7" V 5625 2900 50  0000 C CNN
+F 1 "100nF/16V" V 5525 3100 30  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5625 3150 50  0001 C CNN
+F 3 "~" H 5625 3150 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012206071" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.033" H -3700 700 50  0001 C CNN "Unit price"
+	1    5625 3150
+	0    1    1    0   
+$EndComp
+Connection ~ 5725 3150
+Wire Wire Line
+	5725 3150 5725 3200
+Wire Wire Line
+	5475 3200 5475 3150
+Wire Wire Line
+	5475 2950 5525 2950
+Wire Wire Line
+	5525 3150 5475 3150
+Connection ~ 5475 3150
+Wire Wire Line
+	5475 3150 5475 2950
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA442E3
+P 5925 3150
+AR Path="/5BA90750/5CA442E3" Ref="C?"  Part="1" 
+AR Path="/5CA442E3" Ref="C9"  Part="1" 
+F 0 "C9" V 5925 3350 50  0000 C CNN
+F 1 "100nF/16V" V 5825 3100 30  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5925 3150 50  0001 C CNN
+F 3 "~" H 5925 3150 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012206071" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.033" H -3700 700 50  0001 C CNN "Unit price"
+	1    5925 3150
+	0    1    1    0   
+$EndComp
+Connection ~ 6025 3150
+Wire Wire Line
+	6025 3150 6025 3200
+Wire Wire Line
+	5825 3200 5825 3150
+Wire Wire Line
+	5825 3150 5825 2950
+Connection ~ 5825 3150
+Connection ~ 6625 2950
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA442F2
+P 6725 3150
+AR Path="/5BA90750/5CA442F2" Ref="C?"  Part="1" 
+AR Path="/5CA442F2" Ref="C12"  Part="1" 
+F 0 "C12" V 6675 3400 50  0000 C CNN
+F 1 "100nF/16V" V 6625 3200 30  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6725 3150 50  0001 C CNN
+F 3 "~" H 6725 3150 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012206071" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.033" H -3700 700 50  0001 C CNN "Unit price"
+	1    6725 3150
+	0    1    1    0   
+$EndComp
+Connection ~ 6625 3150
+Wire Wire Line
+	6825 3150 6875 3150
+Wire Wire Line
+	6875 3150 6875 3200
+Wire Wire Line
+	6875 3150 6875 2950
+Wire Wire Line
+	6875 2950 6825 2950
+Connection ~ 6875 3150
+Wire Wire Line
+	5075 3250 5075 3300
+Wire Wire Line
+	6025 2800 6025 2950
+$Comp
+L AA2380V1-rescue:R-Device R?
+U 1 1 5CA4432B
+P 4750 3950
+AR Path="/5BA90750/5CA4432B" Ref="R?"  Part="1" 
+AR Path="/5CA4432B" Ref="R2"  Part="1" 
+F 0 "R2" V 4850 3950 50  0000 C CNN
+F 1 "10" V 4750 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4680 3950 50  0001 C CNN
+F 3 "~" H 4750 3950 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "754-RG1608Q-100DT5 " H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.192" H -3700 700 50  0001 C CNN "Unit price"
+	1    4750 3950
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6625 3150 6625 2950
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA4433E
+P 6425 3050
+AR Path="/5BA90750/5CA4433E" Ref="C?"  Part="1" 
+AR Path="/5CA4433E" Ref="C10"  Part="1" 
+F 0 "C10" V 6275 3050 50  0000 C CNN
+F 1 "100nF/16V" V 6325 3100 30  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6425 3050 50  0001 C CNN
+F 3 "~" H 6425 3050 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012206071" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.033" H -3700 700 50  0001 C CNN "Unit price"
+	1    6425 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6525 3050 6525 3100
+Wire Wire Line
+	6325 3050 6325 3200
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA4434B
+P 5925 2950
+AR Path="/5BA90750/5CA4434B" Ref="C?"  Part="1" 
+AR Path="/5CA4434B" Ref="C8"  Part="1" 
+F 0 "C8" V 5925 2750 50  0000 C CNN
+F 1 "10uF/6.3V" V 5825 3000 30  0000 C CNN
+F 2 "Capacitor_SMD:C_Elec_5x5.8" H 5925 2950 50  0001 C CNN
+F 3 "~" H 5925 2950 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "81-GRM188R60J106KE7D" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.157" H -3700 700 50  0001 C CNN "Unit price"
+	1    5925 2950
+	0    -1   1    0   
+$EndComp
+Connection ~ 6025 2950
+Wire Wire Line
+	6025 2950 6025 3150
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA44356
+P 5625 2950
+AR Path="/5BA90750/5CA44356" Ref="C?"  Part="1" 
+AR Path="/5CA44356" Ref="C6"  Part="1" 
+F 0 "C6" V 5625 3200 50  0000 C CNN
+F 1 "10uF/6.3V" V 5525 3000 30  0000 C CNN
+F 2 "Capacitor_SMD:C_Elec_5x5.8" H 5625 2950 50  0001 C CNN
+F 3 "~" H 5625 2950 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "81-GRM188R60J106KE7D" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.157" H -3700 700 50  0001 C CNN "Unit price"
+	1    5625 2950
+	0    -1   1    0   
+$EndComp
+Connection ~ 5725 2950
+Wire Wire Line
+	5725 2950 5725 3150
+Wire Wire Line
+	5075 3650 5175 3650
+Wire Wire Line
+	5075 3950 5175 3950
+Wire Wire Line
+	5725 2800 5725 2950
+$Comp
+L AA2380V1-rescue:+3.3VA-power #PWR?
+U 1 1 5CA44367
+P 6025 2800
+AR Path="/5BA90750/5CA44367" Ref="#PWR?"  Part="1" 
+AR Path="/5CA44367" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 6025 2650 50  0001 C CNN
+F 1 "+3.3VA" H 6025 2925 50  0000 C CNN
+F 2 "" H 6025 2800 50  0001 C CNN
+F 3 "" H 6025 2800 50  0001 C CNN
+	1    6025 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3650 5075 3650
+Wire Wire Line
+	4900 3950 5075 3950
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA44385
+P 5075 3400
+AR Path="/5BA90750/5CA44385" Ref="C?"  Part="1" 
+AR Path="/5CA44385" Ref="C3"  Part="1" 
+F 0 "C3" H 4825 3400 50  0000 L CNN
+F 1 "6.8nF/100V COG" H 4600 3350 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5075 3400 50  0001 C CNN
+F 3 "~" H 5075 3400 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012008078" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.48" H -3700 700 50  0001 C CNN "Unit price"
+	1    5075 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:C_Small-Device C?
+U 1 1 5CA4438E
+P 5075 4200
+AR Path="/5BA90750/5CA4438E" Ref="C?"  Part="1" 
+AR Path="/5CA4438E" Ref="C5"  Part="1" 
+F 0 "C5" H 4825 4200 50  0000 L CNN
+F 1 "6.8nF/100V COG" H 4600 4100 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5075 4200 50  0001 C CNN
+F 3 "~" H 5075 4200 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "710-885012008078" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.48" H -3700 700 50  0001 C CNN "Unit price"
+	1    5075 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 4450 6475 4400
+Wire Wire Line
+	6275 4450 6275 4400
+Wire Wire Line
+	6075 4450 6075 4400
+Wire Wire Line
+	5875 4450 5875 4400
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443A2
+P 6475 4450
+AR Path="/5BA9080A/5CA443A2" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443A2" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443A2" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443A2" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 6475 4200 50  0001 C CNN
+F 1 "GND" H 6475 4350 30  0000 C CNN
+F 2 "" H 6475 4450 50  0001 C CNN
+F 3 "" H 6475 4450 50  0001 C CNN
+	1    6475 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443A8
+P 6275 4450
+AR Path="/5BA9080A/5CA443A8" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443A8" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443A8" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443A8" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6275 4200 50  0001 C CNN
+F 1 "GND" H 6275 4350 30  0000 C CNN
+F 2 "" H 6275 4450 50  0001 C CNN
+F 3 "" H 6275 4450 50  0001 C CNN
+	1    6275 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443AE
+P 6075 4450
+AR Path="/5BA9080A/5CA443AE" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443AE" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443AE" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443AE" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 6075 4200 50  0001 C CNN
+F 1 "GND" H 6075 4350 30  0000 C CNN
+F 2 "" H 6075 4450 50  0001 C CNN
+F 3 "" H 6075 4450 50  0001 C CNN
+	1    6075 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443B4
+P 5875 4450
+AR Path="/5BA9080A/5CA443B4" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443B4" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443B4" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443B4" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5875 4200 50  0001 C CNN
+F 1 "GND" H 5875 4350 30  0000 C CNN
+F 2 "" H 5875 4450 50  0001 C CNN
+F 3 "" H 5875 4450 50  0001 C CNN
+	1    5875 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443BA
+P 5075 4350
+AR Path="/5BA9080A/5CA443BA" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443BA" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443BA" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443BA" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 5075 4100 50  0001 C CNN
+F 1 "GND" H 5075 4250 30  0000 C CNN
+F 2 "" H 5075 4350 50  0001 C CNN
+F 3 "" H 5075 4350 50  0001 C CNN
+	1    5075 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443C0
+P 5075 3250
+AR Path="/5BA9080A/5CA443C0" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443C0" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443C0" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443C0" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 5075 3000 50  0001 C CNN
+F 1 "GND" H 5075 3150 30  0000 C CNN
+F 2 "" H 5075 3250 50  0001 C CNN
+F 3 "" H 5075 3250 50  0001 C CNN
+	1    5075 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443C6
+P 5475 3200
+AR Path="/5BA9080A/5CA443C6" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443C6" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443C6" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443C6" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 5475 2950 50  0001 C CNN
+F 1 "GND" H 5475 3100 30  0000 C CNN
+F 2 "" H 5475 3200 50  0001 C CNN
+F 3 "" H 5475 3200 50  0001 C CNN
+	1    5475 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443CC
+P 5825 3200
+AR Path="/5BA9080A/5CA443CC" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443CC" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443CC" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443CC" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 5825 2950 50  0001 C CNN
+F 1 "GND" H 5825 3100 30  0000 C CNN
+F 2 "" H 5825 3200 50  0001 C CNN
+F 3 "" H 5825 3200 50  0001 C CNN
+	1    5825 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443D2
+P 6525 3100
+AR Path="/5BA9080A/5CA443D2" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443D2" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443D2" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443D2" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 6525 2850 50  0001 C CNN
+F 1 "GND" H 6525 3000 30  0000 C CNN
+F 2 "" H 6525 3100 50  0001 C CNN
+F 3 "" H 6525 3100 50  0001 C CNN
+	1    6525 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443D8
+P 6875 3200
+AR Path="/5BA9080A/5CA443D8" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443D8" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443D8" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443D8" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 6875 2950 50  0001 C CNN
+F 1 "GND" H 6875 3100 30  0000 C CNN
+F 2 "" H 6875 3200 50  0001 C CNN
+F 3 "" H 6875 3200 50  0001 C CNN
+	1    6875 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA443DE
+P 6000 2200
+AR Path="/5BA9080A/5CA443DE" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA443DE" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA443DE" Ref="#PWR?"  Part="1" 
+AR Path="/5CA443DE" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 6000 1950 50  0001 C CNN
+F 1 "GND" H 6000 2100 30  0000 C CNN
+F 2 "" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 2500 6625 2950
+Wire Wire Line
+	6325 2650 6325 3050
+Connection ~ 6325 3050
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA4443E
+P 7150 4000
+AR Path="/5BA9080A/5CA4443E" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA4443E" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA4443E" Ref="#PWR?"  Part="1" 
+AR Path="/5CA4443E" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 7150 3750 50  0001 C CNN
+F 1 "GND" H 7150 3900 30  0000 C CNN
+F 2 "" H 7150 4000 50  0001 C CNN
+F 3 "" H 7150 4000 50  0001 C CNN
+	1    7150 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 4000 7075 4000
+Text Notes 5925 1775 0    30   ~ 0
+Dynamic Gain\ncompression mode
+Wire Wire Line
+	6625 1800 6625 2500
+Connection ~ 6625 2500
+Wire Wire Line
+	7075 4450 7075 4475
+Wire Wire Line
+	7075 4100 7075 4150
+$Comp
+L AA2380V1-rescue:R-Device R?
+U 1 1 5CA44438
+P 7075 4300
+AR Path="/5BA90750/5CA44438" Ref="R?"  Part="1" 
+AR Path="/5CA44438" Ref="R3"  Part="1" 
+F 0 "R3" H 7225 4300 50  0000 C CNN
+F 1 "1k" V 7075 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7005 4300 50  0001 C CNN
+F 3 "~" H 7075 4300 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "71-CRCW06031K00FKEAC" H -3700 700 50  0001 C CNN "Order code"
+F 6 "0.148" H -3700 700 50  0001 C CNN "Unit price"
+	1    7075 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L AA2380V1-rescue:GND-power #PWR?
+U 1 1 5CA4439C
+P 7075 4475
+AR Path="/5BA9080A/5CA4439C" Ref="#PWR?"  Part="1" 
+AR Path="/5BA907FD/5CA4439C" Ref="#PWR?"  Part="1" 
+AR Path="/5BA90750/5CA4439C" Ref="#PWR?"  Part="1" 
+AR Path="/5CA4439C" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 7075 4225 50  0001 C CNN
+F 1 "GND" H 7075 4375 30  0000 C CNN
+F 2 "" H 7075 4475 50  0001 C CNN
+F 3 "" H 7075 4475 50  0001 C CNN
+	1    7075 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380V1-rescue:R-Device R?
+U 1 1 5CA5671A
+P 7550 3600
+AR Path="/5BA90750/5CA5671A" Ref="R?"  Part="1" 
+AR Path="/5CA5671A" Ref="R5"  Part="1" 
+F 0 "R5" H 7700 3600 50  0000 C CNN
+F 1 "33" V 7550 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7480 3600 50  0001 C CNN
+F 3 "~" H 7550 3600 50  0001 C CNN
+F 4 "Mouser" H -3225 0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW06031K00FKEAC" H -3225 0   50  0001 C CNN "Order code"
+F 6 "0.148" H -3225 0   50  0001 C CNN "Unit price"
+	1    7550 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L AA2380V1-rescue:R-Device R?
+U 1 1 5CA5C7FE
+P 7550 3500
+AR Path="/5BA90750/5CA5C7FE" Ref="R?"  Part="1" 
+AR Path="/5CA5C7FE" Ref="R4"  Part="1" 
+F 0 "R4" H 7700 3500 50  0000 C CNN
+F 1 "33" V 7550 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7480 3500 50  0001 C CNN
+F 3 "~" H 7550 3500 50  0001 C CNN
+F 4 "Mouser" H -3225 -100 50  0001 C CNN "Distributor"
+F 5 "71-CRCW06031K00FKEAC" H -3225 -100 50  0001 C CNN "Order code"
+F 6 "0.148" H -3225 -100 50  0001 C CNN "Unit price"
+	1    7550 3500
+	0    1    -1   0   
+$EndComp
+$Comp
+L AA2380V1-rescue:R-Device R?
+U 1 1 5CA66A08
+P 7550 3800
+AR Path="/5BA90750/5CA66A08" Ref="R?"  Part="1" 
+AR Path="/5CA66A08" Ref="R6"  Part="1" 
+F 0 "R6" H 7700 3800 50  0000 C CNN
+F 1 "33" V 7550 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7480 3800 50  0001 C CNN
+F 3 "~" H 7550 3800 50  0001 C CNN
+F 4 "Mouser" H -3225 200 50  0001 C CNN "Distributor"
+F 5 "71-CRCW06031K00FKEAC" H -3225 200 50  0001 C CNN "Order code"
+F 6 "0.148" H -3225 200 50  0001 C CNN "Unit price"
+	1    7550 3800
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5CA11B09
+P 3950 3800
+F 0 "J1" H 4058 4081 50  0000 C CNN
+F 1 "Audio_In" H 4058 3990 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3950 3800 50  0001 C CNN
+F 3 "~" H 3950 3800 50  0001 C CNN
+	1    3950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3650 4150 3700
+Wire Wire Line
+	4150 3650 4600 3650
+Wire Wire Line
+	4350 3950 4350 3800
+Wire Wire Line
+	4350 3800 4150 3800
+Wire Wire Line
+	4350 3950 4600 3950
+$Comp
+L power:GND #PWR0102
+U 1 1 5CA203F3
+P 4200 4050
+F 0 "#PWR0102" H 4200 3800 50  0001 C CNN
+F 1 "GND" H 4205 3877 50  0000 C CNN
+F 2 "" H 4200 4050 50  0001 C CNN
+F 3 "" H 4200 4050 50  0001 C CNN
+	1    4200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3900 4200 3900
+Wire Wire Line
+	4200 3900 4200 4050
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5CA23A57
+P 5300 2000
+F 0 "J2" H 5408 2281 50  0000 C CNN
+F 1 "Voltages" H 5408 2190 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5300 2000 50  0001 C CNN
+F 3 "~" H 5300 2000 50  0001 C CNN
+	1    5300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5CA27179
+P 6100 1800
+F 0 "J3" V 6162 1944 50  0000 L CNN
+F 1 "Compressor" V 6253 1944 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6100 1800 50  0001 C CNN
+F 3 "~" H 6100 1800 50  0001 C CNN
+	1    6100 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5CA288B9
+P 8450 3700
+F 0 "J4" H 8422 3632 50  0000 R CNN
+F 1 "Control_Bus" H 8422 3723 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8450 3700 50  0001 C CNN
+F 3 "~" H 8450 3700 50  0001 C CNN
+	1    8450 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2000 6000 2200
+Wire Wire Line
+	6200 2000 6350 2000
+Wire Wire Line
+	6100 2000 6100 2300
+Wire Wire Line
+	6100 2300 6350 2300
+Wire Wire Line
+	6350 2300 6350 2650
+Wire Wire Line
+	6350 2650 6325 2650
+Connection ~ 6325 2650
+Wire Wire Line
+	6325 2650 6300 2650
+Wire Wire Line
+	6350 2000 6350 2150
+Wire Wire Line
+	6350 2150 6500 2150
+Wire Wire Line
+	6500 2150 6500 2500
+Wire Wire Line
+	6500 2500 6625 2500
+$Comp
+L power:+3.3VA #PWR0104
+U 1 1 5CA3D30B
+P 5650 2200
+F 0 "#PWR0104" H 5650 2050 50  0001 C CNN
+F 1 "+3.3VA" H 5665 2373 50  0000 C CNN
+F 2 "" H 5650 2200 50  0001 C CNN
+F 3 "" H 5650 2200 50  0001 C CNN
+	1    5650 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+2V5 #PWR0117
+U 1 1 5CA3F982
+P 5650 2100
+F 0 "#PWR0117" H 5650 1950 50  0001 C CNN
+F 1 "+2V5" V 5665 2228 50  0000 L CNN
+F 2 "" H 5650 2100 50  0001 C CNN
+F 3 "" H 5650 2100 50  0001 C CNN
+	1    5650 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0118
+U 1 1 5CA4124D
+P 5650 2000
+F 0 "#PWR0118" H 5650 1850 50  0001 C CNN
+F 1 "+5V" V 5665 2128 50  0000 L CNN
+F 2 "" H 5650 2000 50  0001 C CNN
+F 3 "" H 5650 2000 50  0001 C CNN
+	1    5650 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5CA41DC1
+P 6550 1700
+F 0 "#PWR0119" H 6550 1550 50  0001 C CNN
+F 1 "+5V" H 6565 1873 50  0000 C CNN
+F 2 "" H 6550 1700 50  0001 C CNN
+F 3 "" H 6550 1700 50  0001 C CNN
+	1    6550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5CA42A6C
+P 5650 1900
+F 0 "#PWR0120" H 5650 1650 50  0001 C CNN
+F 1 "GND" V 5655 1772 50  0000 R CNN
+F 2 "" H 5650 1900 50  0001 C CNN
+F 3 "" H 5650 1900 50  0001 C CNN
+	1    5650 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 1900 5500 1900
+Wire Wire Line
+	5650 2000 5500 2000
+Wire Wire Line
+	5650 2100 5500 2100
+Wire Wire Line
+	5650 2200 5500 2200
+Wire Wire Line
+	6550 1700 6600 1700
+Wire Wire Line
+	6600 1700 6600 1800
+Wire Wire Line
+	6600 1800 6625 1800
+Connection ~ 6625 1800
+Wire Wire Line
+	6625 1800 6650 1800
+Wire Wire Line
+	7700 3500 8250 3500
+Wire Wire Line
+	7700 3600 8250 3600
+Wire Wire Line
+	7700 3800 8250 3800
+$Comp
+L power:GND #PWR0121
+U 1 1 5CA561DB
+P 8100 4000
+F 0 "#PWR0121" H 8100 3750 50  0001 C CNN
+F 1 "GND" H 8105 3827 50  0000 C CNN
+F 2 "" H 8100 4000 50  0001 C CNN
+F 3 "" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3900 8100 3900
+Wire Wire Line
+	8100 3900 8100 4000
+Text Label 8400 3500 0    30   ~ 0
+SDO
+Text Label 8400 3600 0    30   ~ 0
+SCK
+Text Label 8400 3700 0    30   ~ 0
+Busy
+Text Label 8400 3800 0    30   ~ 0
+CNV
+Text Label 8400 3900 0    30   ~ 0
+GND
+Connection ~ 7075 3600
+Wire Wire Line
+	7075 3600 7400 3600
+Wire Wire Line
+	7050 3600 7075 3600
+Wire Wire Line
+	7050 3800 7075 3800
+Wire Wire Line
+	7075 3800 7400 3800
+Connection ~ 7075 3800
+Wire Wire Line
+	7050 3500 7075 3500
+Wire Wire Line
+	7075 3500 7400 3500
+Connection ~ 7075 3500
+Wire Wire Line
+	7075 3700 8250 3700
+$Comp
+L AA2380V1-rescue:LTC2380-24-AA2380 U?
+U 1 1 5CA4444A
+P 6175 3800
+AR Path="/5BA90750/5CA4444A" Ref="U?"  Part="1" 
+AR Path="/5CA4444A" Ref="U2"  Part="1" 
+F 0 "U2" H 5850 3900 50  0000 R CNN
+F 1 "LTC2380CMS-24" H 6150 3800 50  0000 R CNN
+F 2 "Package_SO:MSOP-16_3x4mm_P0.5mm" H 5975 3800 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/238024fa.pdf" H 5975 3800 50  0001 C CNN
+F 4 "Mouser" H -3700 700 50  0001 C CNN "Distributor"
+F 5 "LTC2380CMS-24#PBF" H -3700 700 50  0001 C CNN "Order code"
+F 6 "43.76" H -3700 700 50  0001 C CNN "Unit price"
+	1    6175 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7025 3700 7075 3700
+Connection ~ 7075 3700
+$EndSCHEMATC

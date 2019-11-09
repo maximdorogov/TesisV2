@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AA2380)(type Legacy)(uri C:/Users/ASUS/Desktop/Tesis/OSVA/AA2380.lib)(options "")(descr ""))
+  (lib (name AA2380V1-rescue)(type Legacy)(uri ${KIPRJMOD}/AA2380V1-rescue.lib)(options "")(descr ""))
+)
