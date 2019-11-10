@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name spdif_PMOD-rescue)(type Legacy)(uri ${KIPRJMOD}/spdif_PMOD-rescue.lib)(options "")(descr ""))
+)
