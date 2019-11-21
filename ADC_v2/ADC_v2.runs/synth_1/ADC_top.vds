@@ -1,0 +1,328 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 18 17:08:54 2019
+# Process ID: 15812
+# Current directory: C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.runs/synth_1
+# Command line: vivado.exe -log ADC_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_top.tcl
+# Log file: C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.runs/synth_1/ADC_top.vds
+# Journal file: C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ADC_top.tcl -notrace
+Command: synth_design -top ADC_top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8828 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 427.996 ; gain = 96.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ADC_top' [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'F1_ADCx2_DistributedRead' [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/imports/new/F1_ADCx2_DistributedRead.vhd:48]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/imports/new/F1_ADCx2_DistributedRead.vhd:113]
+WARNING: [Synth 8-6014] Unused sequential element ena_sck_reg was removed.  [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/imports/new/F1_ADCx2_DistributedRead.vhd:208]
+INFO: [Synth 8-256] done synthesizing module 'F1_ADCx2_DistributedRead' (1#1) [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/imports/new/F1_ADCx2_DistributedRead.vhd:48]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.runs/synth_1/.Xil/Vivado-15812-DESKTOP-4H7CRNK/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (2#1) [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.runs/synth_1/.Xil/Vivado-15812-DESKTOP-4H7CRNK/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'DUT'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:43]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_top' (3#1) [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:23]
+WARNING: [Synth 8-3331] design ADC_top has unconnected port i_BUSY
+WARNING: [Synth 8-3331] design ADC_top has unconnected port SDO
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 483.375 ; gain = 151.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin DUT:SDOL to constant 0 [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:43]
+WARNING: [Synth 8-3295] tying undriven pin DUT:SDOR to constant 0 [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/new/ADC_top.v:43]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 483.375 ; gain = 151.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 483.375 ; gain = 151.754
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'i_reset'. [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc:11]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ADC_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ADC_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ADC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.613 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 765.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 765.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 765.613 ; gain = 433.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 765.613 ; gain = 433.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 765.613 ; gain = 433.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 765.613 ; gain = 433.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 4     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module F1_ADCx2_DistributedRead 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 4     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design ADC_top has unconnected port i_BUSY
+WARNING: [Synth 8-3331] design ADC_top has unconnected port SDO
+INFO: [Synth 8-3886] merging instance 'DUT/avg_max_reg[0]' (FD) to 'DUT/avg_max_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DUT/\avg_max_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 765.613 ; gain = 433.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 795.746 ; gain = 464.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 806.531 ; gain = 474.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin DUT:SDOL to constant 0
+WARNING: [Synth 8-3295] tying undriven pin DUT:SDOR to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |ila_0 |     1|
+|2     |BUFG  |     3|
+|3     |LUT1  |     5|
+|4     |LUT2  |    14|
+|5     |LUT3  |     6|
+|6     |LUT4  |     4|
+|7     |LUT5  |    10|
+|8     |LUT6  |    56|
+|9     |FDCE  |    60|
+|10    |FDRE  |    68|
+|11    |FDSE  |     1|
+|12    |IBUF  |     1|
+|13    |OBUF  |     2|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------------------------+------+
+|      |Instance |Module                   |Cells |
++------+---------+-------------------------+------+
+|1     |top      |                         |   230|
+|2     |  DUT    |F1_ADCx2_DistributedRead |   226|
++------+---------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 816.246 ; gain = 202.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 816.246 ; gain = 484.625
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 816.246 ; gain = 486.348
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.246 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.runs/synth_1/ADC_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ADC_top_utilization_synth.rpt -pb ADC_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 17:09:40 2019...

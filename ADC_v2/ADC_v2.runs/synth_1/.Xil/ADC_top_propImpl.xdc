@@ -1,0 +1,13 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/ASUS/Desktop/FPGA/spdif/ADC_v2/ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc rfile:../../../ADC_v2.srcs/constrs_1/imports/XDC/Arty_sw_btn_Demo.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=gclk[100]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C2    IOSTANDARD LVCMOS33 } [get_ports { i_reset }]; #IO_L16P_T2_35 Sch=ck_rst
+set_property src_info {type:XDC file:1 line:53 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN D13   IOSTANDARD LVCMOS33 } [get_ports { SDO }]; #IO_L6N_T0_VREF_15 Sch=ja[7]
+set_property src_info {type:XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B18   IOSTANDARD LVCMOS33 } [get_ports { o_SCK  }]; #IO_L10P_T1_AD11P_15 Sch=ja[8]
+set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { i_BUSY }]; #IO_L10N_T1_AD11N_15 Sch=ja[9]
+set_property src_info {type:XDC file:1 line:56 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN K16   IOSTANDARD LVCMOS33 } [get_ports { o_CNV }]; #IO_25_15 Sch=ja[10]
